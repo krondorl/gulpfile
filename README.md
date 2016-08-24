@@ -1,18 +1,22 @@
 # gulpfile
-My Gulp workflow, 2016-08-23
+My Gulp workflow, 2016-08-24
 
 Using:
-* gulp
+* Gulp
 * Sass
 * PostCSS
-* Autoprefixer
-* CSSNano
+  * Autoprefixer
+  * CSSNano
+* Babel
+* Babel Preset 2015
 
 ## 1. Install process
-`npm i gulp gulp-postcss gulp-sass autoprefixer cssnano`
+`npm i gulp gulp-postcss gulp-sass gulp-babel babel-preset-es2015 autoprefixer cssnano`
 
 ## 2. Directories
-Source: `./scss`, dest: `./css`
+* `./scss`, source styles
+* `./js`, source scripts
+* `./dist`, compiled assets
 
 ## 3. Watch
 `gulp`
