@@ -1,7 +1,12 @@
-//
+// added inline image2
 $red: #f80;
 
 body {
   background: $red;
   font-family: sans-serif;
+}
+
+div {
+  background-image: inline-image(../img/like.svg);
+  background-position: 50% 50%;
 }

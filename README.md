@@ -1,8 +1,9 @@
 # gulpfile
-My Gulp workflow, 2016-08-24
+My Gulp workflow, 2016-09-01
 
 Using:
 * Gulp
+* Inline image
 * Sass
 * PostCSS
   * Autoprefixer
@@ -10,13 +11,21 @@ Using:
 * Babel
 * Babel Preset 2015
 
-## 1. Install process
+## Install process
 `npm i gulp gulp-postcss gulp-sass gulp-babel babel-preset-es2015 autoprefixer cssnano`
 
-## 2. Directories
+## Directories
 * `./scss`, source styles
 * `./js`, source scripts
 * `./dist`, compiled assets
 
-## 3. Watch
+## Watch
 `gulp`
+
+## Style processing
+
+Steps:
+
+1. Inline image
+2. Sass
+3. PostCSS

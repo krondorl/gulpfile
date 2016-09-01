@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var babel = require("gulp-babel");
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
+var inlineimage = require('gulp-inline-image');
 
 var scssSrc = './scss/**/*.scss';
 var jsSrc   = './js/**/*.js';
@@ -15,6 +16,7 @@ gulp.task('css', function () {
     cssnano
   ];
   return gulp.src(scssSrc)
+    .pipe(inlineimage())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest(distDir));
