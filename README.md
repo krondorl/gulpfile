@@ -12,7 +12,7 @@ Using:
 * Babel Preset 2015
 
 ## Install process
-`npm i gulp gulp-postcss gulp-sass gulp-babel babel-preset-es2015 autoprefixer cssnano`
+`npm i gulp gulp-inline-image gulp-postcss gulp-sass gulp-babel babel-preset-es2015 autoprefixer cssnano`
 
 ## Directories
 * `./scss`, source styles
